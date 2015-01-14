@@ -1,0 +1,32 @@
+AsyncTransfers config
+----------------------------
+
+config.AsyncTransfer.pool_size = 400
+config.AsyncTransfer.pollInterval = 30 #conservative, too avoid couch overload
+config.AsyncTransfer.max_files_per_transfer = 100
+
+--------------------------
+Monitor config
+----------------------------
+
+inbox_poll_interval = 30
+job_poll_interval_slow = 10    
+job_poll_interval_fast = 0.3   
+job_parallelism        = 8     
+per_job_poll_interval  = 7     
+job_timeout            = 72000 
+file_timeout           = 18000
+
+fake_transfer_rate = 104857600 # 1048576 is 1 MB/sec
+
+file size=2GB
+
+----------------------------
+Fake input injection config
+----------------------------
+
+144000 docs injected
+
+400docs/min -> 6h
+
+
