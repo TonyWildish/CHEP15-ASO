@@ -1,0 +1,8 @@
+\begin{abstract}
+
+AsyncStageOut (ASO) is a new component of the distributed data analysis system of CMS, designed for managing users data. It addresses a major weakness of the previous model, namely low total job execution efficiency due to the remote stage-out of the output. This is synchronous with the analysis job execution, from the computing node to the remote site. This has high transfer failure rates, and causes site-overload, and has poor monitoring of users data, etc. ASO foresees the management of up to 400k files per day, of varying sizes, spread worldwide across more than 30 sites. It must handle up to 1000 individual users per month, and work with minimal delays. These represent a new set of challenges in the areas of the data management systems scalability, monitoring and performance.
+
+ASO has progressed from a limited prototype to a highly adaptable service, which manages and monitors the whole user files placement and bookkeeping. It employs new technologies such as NoSQL database and re-uses existing components of PhEDEx and the FTS Dashboard for system scalability and data monitoring.
+
+We present an overview of the new distributed data analysis model and the architecture of the solution we implemented to deal with those issues and challenges. The deployment model for the high availability and scalability of the service is discussed. The performance of the system during the commissioning and the first phase of production are also shown, along with results from simulations designed to explore the limits of scalability.
+\end{abstract}
